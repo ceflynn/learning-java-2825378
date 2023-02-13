@@ -1,18 +1,14 @@
 public class Main {
 
     public static void main(String[] args) {
-        Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
-        Triangle triangleB = new Triangle(3, 2.598, 3, 3,3);
+       Student profileOne = new Student("Chris","Flynn","Business",4.00,
+               2023);
 
-        double triangleAArea = triangleA.findArea();
-        System.out.println(triangleAArea);
+       Student profileTwo = new Student("Andrea","Flynn","Art",3.45,
+               2024);
 
-        double triangleBArea = triangleB.findArea();
-        System.out.println(triangleBArea);
-
-        // Triangle.findArea()? --> Math.pow(2,3)?
-
-
+       profileTwo.incrementGradYear();
+       System.out.println(profileTwo.expectedYearToGraduate);
     }
 
 }
